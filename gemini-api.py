@@ -77,7 +77,8 @@ def append_json(FILE_NAME: str, json_content):
             if raw:
                 parsed = extract_json(raw)
                 existing = parsed if isinstance(parsed, list) else [parsed]
-        except:
+        except BaseException as e:
+            print(f"ERROR: {e}")
             existing = []
 
     new_items = json_content if isinstance(json_content, list) else [json_content]
