@@ -9,6 +9,9 @@ wheels/
 # Virtual environments
 .venv
 
+.DS_Store
+
 *.json
 
 gemma-ner-lora/
+vllm/
